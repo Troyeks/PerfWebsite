@@ -1,0 +1,111 @@
+@use 'grid';
+@use 'animation';
+@use 'button';
+@use 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@font-face {
+  font-family: 'Alverata-Bold'; /* name of your font */
+  src: url('/fonts/Alverata-Bold.ttf'); /* path to your font file */
+  font-weight: bold;
+  font-style: bold;
+}
+
+//* {outline: 1px solid rgb(66, 255, 214)}; //for checking
+
+//Header Styling//
+.perf_header{
+  .hdr_con{
+    padding: 80px 0 135px 0;
+    .hdr_dtls{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+//Above the Fold Styling//
+.perf_atf{
+  position: absolute;
+  width: 100%;
+  .wrapper{
+    max-width: 1362px;
+    background-color: #D77C2D;
+    padding: 0 90px;
+  }
+  .atf_con{
+    padding: 60px 0;
+    .atf_dtls{
+      position: relative;
+      img{
+        position: absolute;
+        bottom: -60px;
+        right: -93px;
+      }
+      .right-content{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 40%;
+        .title{
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+        button{
+          width: fit-content;
+          border: 1px solid #FFCA95;
+        }
+      }
+    }
+  }
+  h1{
+    font-family: 'Alverata-Bold';
+    font-size: 44px;
+    line-height: 56px;
+    color: #ffffff;
+  }
+  p{
+    color: #ffffff;
+  }
+}
+
+//Qualities Styling//
+.perf_qual{
+  position: relative;
+  top: 180px;
+  background-color: #ffffff;
+  z-index: -1;
+  .qual_con{
+    padding: 300px 0 105px 0;
+    .qual_dtls{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      .top_content{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        width: 100%;
+        h2{
+          font-family: 'Alverata-Bold';
+          font-size: 40px;
+          line-height: 46px;
+          color: #CD7F32;
+        }
+        p{
+          color: #CD7F32;
+        }
+      }
+      .btm_content{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+}

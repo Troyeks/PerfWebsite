@@ -1,0 +1,15 @@
+/*Button Styling*/
+/*Primary Button Styling*/
+.btn-primary {
+  color: #ffffff;
+  background-color: #CD7F32;
+}
+.btn-primary:hover {
+  background-color: #895521;
+}
+
+/*Secondary Button Styling*/
+.btn-secondary {
+  color: #ffffff;
+  background-color: transparent;
+}/*# sourceMappingURL=button.css.map */

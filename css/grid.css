@@ -1,0 +1,92 @@
+/* Container styling */
+.container {
+  display: flex;
+  justify-content: center; /* Center the grid */
+  padding: 0 370px; /* Margin of 370px on each side */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+/* Row styling */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%; /* Ensure the row doesn't exceed the container width */
+  margin-bottom: 32px;
+}
+
+/* Column styling */
+.col {
+  margin-right: 24px; /* Gutter width */
+  box-sizing: border-box; /* Ensure padding and border are included in the total width */
+}
+
+/* Columns (1 to 12 out of 12 grid system) */
+/* Column spanning 1 out of 12 */
+.col-1 {
+  flex: 0 0 calc((100% - 264px) / 12); /* 11 gutters, 12 columns */
+}
+
+/* Column spanning 2 out of 12 */
+.col-2 {
+  flex: 0 0 calc((100% - 264px) / 12 * 2 + 24px); /* 11 gutters, 2 columns */
+}
+
+/* Column spanning 3 out of 12 */
+.col-3 {
+  flex: 0 0 calc((100% - 264px) / 12 * 3 + 48px); /* 11 gutters, 3 columns */
+}
+
+/* Column spanning 4 out of 12 */
+.col-4 {
+  flex: 0 0 calc((100% - 264px) / 12 * 4 + 72px); /* 11 gutters, 4 columns */
+}
+
+/* Column spanning 5 out of 12 */
+.col-5 {
+  flex: 0 0 calc((100% - 264px) / 12 * 5 + 96px); /* 11 gutters, 5 columns */
+}
+
+/* Column spanning 6 out of 12 */
+.col-6 {
+  flex: 0 0 calc((100% - 264px) / 12 * 6 + 120px); /* 11 gutters, 6 columns */
+}
+
+/* Column spanning 7 out of 12 */
+.col-7 {
+  flex: 0 0 calc((100% - 264px) / 12 * 7 + 144px); /* 11 gutters, 7 columns */
+}
+
+/* Column spanning 9 out of 12 */
+.col-9 {
+  flex: 0 0 calc((100% - 264px) / 12 * 9 + 192px); /* 11 gutters, 9 columns */
+}
+
+/* Column spanning 10 out of 12 */
+.col-10 {
+  flex: 0 0 calc((100% - 264px) / 12 * 10 + 216px); /* 11 gutters, 10 columns */
+}
+
+/* Column spanning 11 out of 12 */
+.col-11 {
+  flex: 0 0 calc((100% - 264px) / 12 * 11 + 240px); /* 11 gutters, 11 columns */
+}
+
+/* Column spanning 12 out of 12 */
+.col-12 {
+  flex: 0 0 100%; /* Full width for 12-column layout */
+}
+
+.col:last-child {
+  margin-right: 0; /* Remove the margin on the last column */
+}
+
+/* Optional: Styling for visualization */
+.col {
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  margin-right: 24px;
+}/*# sourceMappingURL=grid.css.map */

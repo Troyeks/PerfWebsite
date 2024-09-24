@@ -1,0 +1,22 @@
+/* Wrapper styling */
+.wrapper {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+//Grid lines styling
+.lines-black{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    padding: 0 366px;
+    z-index: -1;
+    span{
+      border-left: 1px solid #412815;
+    }
+    :nth-child(5){
+      border-right: 1px solid #412815;
+    }
+}

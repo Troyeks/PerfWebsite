@@ -1,0 +1,10 @@
+*{
+    &:hover{
+        transition: all 400ms cubic-bezier(0.765, 0.005, 0.435, 1.000);
+        transition-timing-function: cubic-bezier(0.765, 0.005, 0.435, 1.000);
+    }
+    &:not(:hover){
+        transition: all 400ms cubic-bezier(0.765, 0.005, 0.435, 1.000);
+        transition-timing-function: cubic-bezier(0.765, 0.005, 0.435, 1.000);
+    }
+}
