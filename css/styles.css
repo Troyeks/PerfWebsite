@@ -139,21 +139,25 @@ body {
   bottom: -60px;
   right: -93px;
 }
-.perf_atf .atf_con .dtls_container .atf_dtls .right-content {
+.perf_atf .atf_con .dtls_container .atf_dtls .right_content {
   display: flex;
   flex-direction: column;
   gap: 32px;
   width: 40%;
 }
-.perf_atf .atf_con .dtls_container .atf_dtls .right-content .title {
+.perf_atf .atf_con .dtls_container .atf_dtls .right_content .title {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.perf_atf .atf_con .dtls_container .atf_dtls .right-content button {
+.perf_atf .atf_con .dtls_container .atf_dtls .right_content button {
   width: -moz-fit-content;
   width: fit-content;
   border: 1px solid #FFCA95;
+  background-color: rgba(205, 127, 50, 0.4);
+}
+.perf_atf .atf_con .dtls_container .atf_dtls .right_content button:hover {
+  background-color: rgba(131, 69, 16, 0.4);
 }
 .perf_atf h1 {
   font-family: "Alverata-Bold";
@@ -259,4 +263,52 @@ body {
 .perf_qual .qual_con .qual_dtls .right_content button {
   width: -moz-fit-content;
   width: fit-content;
+  border: 1px solid #FFCA95;
+  background-color: rgba(205, 127, 50, 0.4);
+}
+.perf_qual .qual_con .qual_dtls .right_content button:hover {
+  background-color: rgba(205, 127, 50, 0.8);
+}
+
+.perf_projects {
+  overflow: hidden; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #D77C2D 0%, #D77C2D 50%, #f6f6f6 50%, #f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+}
+.perf_projects .projects_con {
+  padding: 80px 0;
+}
+.perf_projects .projects_con .project_dtls {
+  display: flex;
+  align-items: center;
+}
+.perf_projects .projects_con .project_dtls .left_content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+.perf_projects .projects_con .project_dtls .left_content h2 {
+  font-family: "Alverata-Bold";
+  font-size: 40px;
+  line-height: 46px;
+  color: #ffffff;
+}
+.perf_projects .projects_con .project_dtls .left_content p {
+  color: #ffffff;
+  line-height: 32px;
+}
+.perf_projects .projects_con .project_dtls .left_content button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #FFCA95;
+  background-color: rgba(205, 127, 50, 0.4);
+}
+.perf_projects .projects_con .project_dtls .left_content button:hover {
+  background-color: rgba(131, 69, 16, 0.4);
+}
+.perf_projects .projects_con .project_dtls .right_content {
+  display: flex;
+  gap: 40px;
+  position: relative;
+  right: -480px;
 }/*# sourceMappingURL=styles.css.map */

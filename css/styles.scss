@@ -42,7 +42,7 @@
           bottom: -60px;
           right: -93px;
         }
-        .right-content{
+        .right_content{
           display: flex;
           flex-direction: column;
           gap: 32px;
@@ -55,6 +55,10 @@
           button{
             width: fit-content;
             border: 1px solid #FFCA95;
+            background-color: rgba(205, 127, 50, 40%);
+            &:hover{
+              background-color: rgba(131, 69, 16, 40%);
+            }
           }
         }
       }
@@ -166,7 +170,57 @@
         }
         button{
           width: fit-content;
+          border: 1px solid #FFCA95;
+          background-color: rgba(205, 127, 50, 40%);
+          &:hover{
+            background-color: rgba(205, 127, 50, 80%);
+          }
         }
+      }
+    }
+  }
+}
+
+//Projects Styling//
+
+.perf_projects{
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9c9e9f), color-stop(50%,#9c9e9f), color-stop(50%,#f6f6f6), color-stop(100%,#f6f6f6)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  #D77C2D 0%,#D77C2D 50%,#f6f6f6 50%,#f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+  .projects_con{
+    padding: 80px 0;
+    .project_dtls{
+      display: flex;
+      align-items: center;
+      .left_content{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+        h2{
+          font-family: 'Alverata-Bold';
+          font-size: 40px;
+          line-height: 46px;
+          color: #ffffff;
+        }
+        p{
+          color: #ffffff;
+          line-height: 32px;
+        }
+        button{
+          width: fit-content;
+            border: 1px solid #FFCA95;
+            background-color: rgba(205, 127, 50, 40%);
+            &:hover{
+              background-color: rgba(131, 69, 16, 40%);
+          }
+        }
+      }
+      .right_content{
+        display: flex;
+        gap: 40px;
+        position: relative;
+        right: -480px;
       }
     }
   }
