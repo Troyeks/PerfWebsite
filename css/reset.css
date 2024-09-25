@@ -11,6 +11,7 @@ html, body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  background-color: #272725;
 }
 
 ul, ol {
@@ -37,8 +38,4 @@ input, select, textarea, button {
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  background-color: #272725;
 }/*# sourceMappingURL=reset.css.map */

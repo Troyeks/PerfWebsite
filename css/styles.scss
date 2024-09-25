@@ -10,7 +10,7 @@
   font-style: bold;
 }
 
-//* {outline: 1px solid rgb(66, 255, 214)}; //for checking
+//* {outline: 1px solid cyan}; //for checking
 
 //Header Styling//
 .perf_header{
@@ -33,7 +33,10 @@
   }
   .atf_con{
     .dtls_container{
-      background-color: #D77C2D;
+      //background-color: #D77C2D;
+      background-image: url(/images//concrete-color.png);
+      background-repeat: no-repeat;
+      background-size: cover;
       padding: 60px 90px;
       .atf_dtls{
         position: relative;
@@ -78,11 +81,8 @@
 
 //Partners Styling//
 .perf_partners{
-  // position: relative;
-  // top: 180px;
   margin-top: 180px;
   background-color: #ffffff;
-  z-index: -1;
   .wrapper{
     margin: 0 auto;
   }
@@ -185,8 +185,12 @@
 
 .perf_projects{
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9c9e9f), color-stop(50%,#9c9e9f), color-stop(50%,#f6f6f6), color-stop(100%,#f6f6f6)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left,  #D77C2D 0%,#D77C2D 50%,#f6f6f6 50%,#f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+  position: relative;
+  //background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9c9e9f), color-stop(50%,#9c9e9f), color-stop(50%,#f6f6f6), color-stop(100%,#f6f6f6)); /* Chrome,Safari4+ */
+  //background: -webkit-linear-gradient(left,  #D77C2D 0%,#D77C2D 50%,#f6f6f6 50%,#f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+  background: 
+    url('/images//concrete-color.png') left center / 50% no-repeat, /* Image on the left half */
+    linear-gradient(to right, transparent 50%, #ffffff 50%); /* Gradient color on the right half */
   .projects_con{
     padding: 80px 0;
     .project_dtls{
@@ -219,8 +223,186 @@
       .right_content{
         display: flex;
         gap: 40px;
-        position: relative;
-        right: -480px;
+        position: absolute;
+        right: -150px;
+      }
+    }
+  }
+}
+
+//Team Styling//
+.perf_team{
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    #ffffff 50% 80%,
+    transparent 80%);
+  .team_con{
+    padding: 140px 0 70px 0;
+    .team_dtls{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+      .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        h2{
+          font-family: 'Alverata-Bold';
+          font-size: 40px;
+          line-height: 46px;
+          color: #ffffff;
+        }
+        p{
+          color: #ffffff;
+          line-height: 32px;
+        }
+      }
+      .btm_group{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .member_group{
+          display: flex;
+          gap: 24px;
+          .member{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            img{
+              width: 100%;
+            }
+            .name{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 8px;
+              h3{
+                color: #000000;
+              }
+              p{
+                color: #000000
+              }
+            }
+          }
+        }
+        .exp_group{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 80px 64px;
+          position: relative;
+          background-image: url(/images//concrete-color.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          .exp{
+            display: flex;
+            flex-direction: column;
+            .hlight{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 24px;
+            }
+            h4{
+              font-size: 32px;
+              line-height: 48px;
+              font-weight: 700;
+              color: #ffffff;
+            }
+            p{
+              color: #ffffff;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Footer Styling//
+footer{
+  .footer_cont{
+    padding: 70px 0 0 0;
+    .footer_dtls{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      .top_ftr{
+        display: flex;
+        justify-content: space-between;
+        .cmpny_dtls{
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          width: 35%;
+          p{
+            color: #ffffff;
+            line-height: 32px;
+          }
+          .top_content{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            img{
+              width: fit-content;
+            }
+          }
+          .btm_content{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          }
+        }
+        .links_group{
+          display: flex;
+          gap: 56px;
+          .links{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            h4{
+              color: #ffffff;
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 40px;
+            }
+            .lnk_cnt{
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+              p{
+                color: #ffffff;
+                line-height: 32px;
+              }
+            }
+          }
+        }
+      }
+      .btm_footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0;
+        border-top: 1px solid #575757;
+        .left_content{
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+        .right_content{
+          display: flex;
+          gap: 40px;
+        }
+        p{
+          color: #ffffff;
+        }
       }
     }
   }

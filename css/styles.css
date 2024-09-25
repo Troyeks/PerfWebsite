@@ -6,19 +6,21 @@
   margin: 0 auto;
 }
 
-.lines-black {
+.lines_black {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
   padding: 0 360px;
-  z-index: -1;
 }
-.lines-black span {
+.lines_black span {
   border-left: 1px solid #412815;
+  height: 100vh;
 }
-.lines-black :nth-child(5) {
+.lines_black :nth-child(5) {
   border-right: 1px solid #412815;
 }
 
@@ -73,6 +75,7 @@ html, body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  background-color: #272725;
 }
 
 ul, ol {
@@ -101,10 +104,6 @@ input, select, textarea, button {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #272725;
-}
-
 @font-face {
   font-family: "Alverata-Bold"; /* name of your font */
   src: url("/fonts/Alverata-Bold.ttf"); /* path to your font file */
@@ -128,7 +127,9 @@ body {
   max-width: 1362px;
 }
 .perf_atf .atf_con .dtls_container {
-  background-color: #D77C2D;
+  background-image: url(/images//concrete-color.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 60px 90px;
 }
 .perf_atf .atf_con .dtls_container .atf_dtls {
@@ -173,7 +174,6 @@ body {
 .perf_partners {
   margin-top: 180px;
   background-color: #ffffff;
-  z-index: -1;
 }
 .perf_partners .wrapper {
   margin: 0 auto;
@@ -271,8 +271,9 @@ body {
 }
 
 .perf_projects {
-  overflow: hidden; /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, #D77C2D 0%, #D77C2D 50%, #f6f6f6 50%, #f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+  overflow: hidden;
+  position: relative;
+  background: url("/images//concrete-color.png") left center/50% no-repeat, linear-gradient(to right, transparent 50%, #ffffff 50%); /* Gradient color on the right half */
 }
 .perf_projects .projects_con {
   padding: 80px 0;
@@ -309,6 +310,177 @@ body {
 .perf_projects .projects_con .project_dtls .right_content {
   display: flex;
   gap: 40px;
+  position: absolute;
+  right: -150px;
+}
+
+.perf_team {
+  background: linear-gradient(to bottom, transparent 50%, #ffffff 50% 80%, transparent 80%);
+}
+.perf_team .team_con {
+  padding: 140px 0 70px 0;
+}
+.perf_team .team_con .team_dtls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.perf_team .team_con .team_dtls .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+.perf_team .team_con .team_dtls .title h2 {
+  font-family: "Alverata-Bold";
+  font-size: 40px;
+  line-height: 46px;
+  color: #ffffff;
+}
+.perf_team .team_con .team_dtls .title p {
+  color: #ffffff;
+  line-height: 32px;
+}
+.perf_team .team_con .team_dtls .btm_group {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.perf_team .team_con .team_dtls .btm_group .member_group {
+  display: flex;
+  gap: 24px;
+}
+.perf_team .team_con .team_dtls .btm_group .member_group .member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.perf_team .team_con .team_dtls .btm_group .member_group .member img {
+  width: 100%;
+}
+.perf_team .team_con .team_dtls .btm_group .member_group .member .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.perf_team .team_con .team_dtls .btm_group .member_group .member .name h3 {
+  color: #000000;
+}
+.perf_team .team_con .team_dtls .btm_group .member_group .member .name p {
+  color: #000000;
+}
+.perf_team .team_con .team_dtls .btm_group .exp_group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 64px;
   position: relative;
-  right: -480px;
+  background-image: url(/images//concrete-color.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.perf_team .team_con .team_dtls .btm_group .exp_group .exp {
+  display: flex;
+  flex-direction: column;
+}
+.perf_team .team_con .team_dtls .btm_group .exp_group .exp .hlight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.perf_team .team_con .team_dtls .btm_group .exp_group .exp h4 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.perf_team .team_con .team_dtls .btm_group .exp_group .exp p {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+footer .footer_cont {
+  padding: 70px 0 0 0;
+}
+footer .footer_cont .footer_dtls {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+footer .footer_cont .footer_dtls .top_ftr {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_cont .footer_dtls .top_ftr .cmpny_dtls {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 35%;
+}
+footer .footer_cont .footer_dtls .top_ftr .cmpny_dtls p {
+  color: #ffffff;
+  line-height: 32px;
+}
+footer .footer_cont .footer_dtls .top_ftr .cmpny_dtls .top_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer_cont .footer_dtls .top_ftr .cmpny_dtls .top_content img {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .footer_cont .footer_dtls .top_ftr .cmpny_dtls .btm_content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer .footer_cont .footer_dtls .top_ftr .links_group {
+  display: flex;
+  gap: 56px;
+}
+footer .footer_cont .footer_dtls .top_ftr .links_group .links {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+footer .footer_cont .footer_dtls .top_ftr .links_group .links h4 {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 40px;
+}
+footer .footer_cont .footer_dtls .top_ftr .links_group .links .lnk_cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer_cont .footer_dtls .top_ftr .links_group .links .lnk_cnt p {
+  color: #ffffff;
+  line-height: 32px;
+}
+footer .footer_cont .footer_dtls .btm_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  border-top: 1px solid #575757;
+}
+footer .footer_cont .footer_dtls .btm_footer .left_content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer .footer_cont .footer_dtls .btm_footer .right_content {
+  display: flex;
+  gap: 40px;
+}
+footer .footer_cont .footer_dtls .btm_footer p {
+  color: #ffffff;
 }/*# sourceMappingURL=styles.css.map */
