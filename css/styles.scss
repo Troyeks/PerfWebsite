@@ -13,13 +13,18 @@
 //* {outline: 1px solid cyan}; //for checking
 
 //Header Styling//
-.perf_header{
+header{
   .hdr_con{
     padding: 80px 0 135px 0;
     .hdr_dtls{
       display: flex;
       align-items: center;
       justify-content: space-between;
+      .btn_left{
+        .hamburger{
+          display: none;
+        }
+      }
     }
   }
 }
@@ -33,7 +38,6 @@
   }
   .atf_con{
     .dtls_container{
-      //background-color: #D77C2D;
       background-image: url(/images//concrete-color.png);
       background-repeat: no-repeat;
       background-size: cover;
@@ -154,6 +158,7 @@
           .qual{
             display: flex;
             gap: 24px;
+            flex: 1;
             h3{
               color: #ffffff;
             }
@@ -407,3 +412,42 @@ footer{
     }
   }
 }
+
+//1280 Indicator//
+.ilis_na{
+  position: absolute;
+  padding: 10px 20px;
+  background-color: white;
+  display: none;
+}
+
+//Laptop Styling//
+@media screen and (max-width: 1280px) {
+  .ilis_na{
+    display: block;
+  }
+  .wrapper{
+    max-width: 824px;
+  }
+  // Header Styling //
+  header{
+    .hdr_con{
+      .hdr_dtls{
+        .btn_center{
+          display: none;
+        }
+        .btn_left{
+          display: flex;
+          gap: 16px;
+          .hamburger{
+            display: flex;
+            padding: 0px 12px;
+            border: 1px solid #FFCA95;
+            background-color: rgba(205, 127, 50, 40%);
+          }
+        }
+      }
+    }
+  }
+}
+

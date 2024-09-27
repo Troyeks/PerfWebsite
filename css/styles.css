@@ -110,13 +110,16 @@ input, select, textarea, button {
   font-weight: bold;
   font-style: bold;
 }
-.perf_header .hdr_con {
+header .hdr_con {
   padding: 80px 0 135px 0;
 }
-.perf_header .hdr_con .hdr_dtls {
+header .hdr_con .hdr_dtls {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+header .hdr_con .hdr_dtls .btn_left .hamburger {
+  display: none;
 }
 
 .perf_atf {
@@ -247,6 +250,7 @@ input, select, textarea, button {
 .perf_qual .qual_con .qual_dtls .right_content .qual_group .qual {
   display: flex;
   gap: 24px;
+  flex: 1;
 }
 .perf_qual .qual_con .qual_dtls .right_content .qual_group .qual h3 {
   color: #ffffff;
@@ -483,4 +487,33 @@ footer .footer_cont .footer_dtls .btm_footer .right_content {
 }
 footer .footer_cont .footer_dtls .btm_footer p {
   color: #ffffff;
+}
+
+.ilis_na {
+  position: absolute;
+  padding: 10px 20px;
+  background-color: white;
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .ilis_na {
+    display: block;
+  }
+  .wrapper {
+    max-width: 824px;
+  }
+  header .hdr_con .hdr_dtls .btn_center {
+    display: none;
+  }
+  header .hdr_con .hdr_dtls .btn_left {
+    display: flex;
+    gap: 16px;
+  }
+  header .hdr_con .hdr_dtls .btn_left .hamburger {
+    display: flex;
+    padding: 0px 12px;
+    border: 1px solid #FFCA95;
+    background-color: rgba(205, 127, 50, 0.4);
+  }
 }/*# sourceMappingURL=styles.css.map */
