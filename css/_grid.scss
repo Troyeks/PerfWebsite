@@ -22,3 +22,17 @@
       border-right: 1px solid #412815;
     }
 }
+
+//Web Medium Screen//
+@media screen and (max-width: 1280px) {
+  .wrapper{
+    max-width: 1080px;
+  }
+}
+
+//Tablet Screen//
+@media screen and (max-width: 1024px) {
+  .wrapper{
+    max-width: 824px;
+  }
+}

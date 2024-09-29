@@ -12,8 +12,8 @@
 
 //* {outline: 1px solid cyan}; //for checking
 
-//Header Styling//
-header{
+//Navigation Styling//
+nav{
   .hdr_con{
     padding: 80px 0 135px 0;
     .hdr_dtls{
@@ -133,6 +133,9 @@ header{
       display: flex;
       justify-content: space-between;
       gap: 120px;
+      img:nth-child(2){
+        display: none;
+      }
       .right_content{
         display: flex;
         flex-direction: column;
@@ -203,12 +206,12 @@ header{
         display: flex;
         flex-direction: column;
         gap: 24px;
-        width: 100%;
         h2{
           font-family: 'Alverata-Bold';
           font-size: 40px;
           line-height: 46px;
           color: #ffffff;
+          width: 40%;
         }
         p{
           color: #ffffff;
@@ -235,11 +238,7 @@ header{
 
 //Team Styling//
 .perf_team{
-  background: linear-gradient(
-    to bottom,
-    transparent 50%,
-    #ffffff 50% 80%,
-    transparent 80%);
+  background: linear-gradient(to bottom, transparent 50%, #ffffff 50% 83%, transparent 83%);
   .team_con{
     padding: 140px 0 70px 0;
     .team_dtls{
@@ -263,6 +262,7 @@ header{
         p{
           color: #ffffff;
           line-height: 32px;
+          text-align: center;
         }
       }
       .btm_group{
@@ -287,9 +287,11 @@ header{
               gap: 8px;
               h3{
                 color: #000000;
+                text-align: center;
               }
               p{
-                color: #000000
+                color: #000000;
+                text-align: center;
               }
             }
           }
@@ -298,7 +300,7 @@ header{
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 80px 64px;
+          padding: 64px;
           position: relative;
           background-image: url(/images//concrete-color.png);
           background-repeat: no-repeat;
@@ -315,12 +317,11 @@ header{
             h4{
               font-size: 32px;
               line-height: 48px;
-              font-weight: 700;
+              font-weight: 600;
               color: #ffffff;
             }
             p{
               color: #ffffff;
-              font-weight: 500;
             }
           }
         }
@@ -416,18 +417,75 @@ footer{
   display: none;
 }
 
-//1280 Indicator//
-.ilis_na{
-  position: absolute;
-  padding: 10px 20px;
-  background-color: white;
-  display: none;
+//Web Medium Screen//
+@media screen and (max-width: 1280px){
+  // Navigation Styling //
+  nav{
+
+  }
+  //Above the Fold Styling//
+  .perf_atf{
+    .wrapper{
+      max-width: 1200px;
+    }
+    .atf_con{
+      .dtls_container{
+        .atf_dtls{
+          img{
+          }
+          .right_content{
+            width: 50%;
+            position: relative;
+            z-index: 1;
+          }
+        }
+      }
+    }
+  }
+
+  //Projects Styling{
+  .perf_projects{
+    background: url(/images//concrete-color.png) left center / 57% no-repeat,
+    linear-gradient(to right, transparent 50%, #ffffff 50%);
+    .projects_con{
+      .project_dtls{
+        .left_content{
+        }
+        .right_content{
+          right: -250px;
+        }
+      }
+    }
+  }
 }
 
-//Laptop Styling//
-@media screen and (max-width: 1280px) {
+//Tablet Screen//
+@media screen and (max-width: 1024px) {
+  // Navigation Styling //
+  nav{
+    .hdr_con{
+      .hdr_dtls{
+        .btn_center{
+          display: none;
+        }
+        .btn_left{
+          display: flex;
+          gap: 16px;
+          .hamburger{
+            display: flex;
+            padding: 0px 12px;
+            border: 1px solid #FFCA95;
+            background-color: rgba(205, 127, 50, 0.4);
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  // Menu Mobile //
   .menu_mobile{
-    display: flex;
+    display: none;
     justify-content: flex-end;
     background-color: rgba(39, 39, 37, 24%);
     backdrop-filter: blur(10px);
@@ -476,24 +534,144 @@ footer{
       }
     }
   }
-  .wrapper{
-    max-width: 824px;
+
+  //Above the Fold Styling//
+  .perf_atf{
+    .wrapper{
+      max-width: 946px;
+    }
+    .atf_con{
+      .dtls_container{
+        padding: 60px;
+        .atf_dtls{
+          img{
+            bottom: -60px;
+            right: -62px;
+          }
+          .right_content{
+            width: 60%;
+          }
+        }
+      }
+    }
   }
-  // Header Styling //
-  header{
-    .hdr_con{
-      .hdr_dtls{
-        .btn_center{
+
+  //Partners Styling//
+  .perf_partners{
+    .wrapper{
+    }
+    .partners_con{
+      .partners_dtls{
+        .top_content{
+        }
+        .btm_content{
+          img:first-child{
+            height: 49px;
+          }
+          img:last-child{
+            height: 80px;
+          }
+        }
+      }
+    }
+  }
+
+  //Qualities Styling//
+  .perf_qual{
+    .qual_con{
+      .qual_dtls{
+        flex-direction: column;
+        gap: 80px;
+        img:first-child{
           display: none;
         }
-        .btn_left{
+        img:nth-child(2){
           display: flex;
-          gap: 16px;
-          .hamburger{
-            display: flex;
-            padding: 0px 12px;
-            border: 1px solid #FFCA95;
-            background-color: rgba(205, 127, 50, 40%);
+        }
+        .right_content{
+          .title{
+          }
+          .qual_group{
+            .qual{
+              .details{
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //Projects Styling//{
+  .perf_projects{
+    background: url("/images//concrete-color.png") left center/68% no-repeat,
+    linear-gradient(to right, transparent 50%, #ffffff 50%);
+    .projects_con{
+      .project_dtls{
+        .left_content{
+        }
+        .right_content{
+          right: -480px;
+        }
+      }
+    }
+  }
+
+  //Team Styling//
+  .perf_team{
+    .team_con{
+      .team_dtls{
+        .title{
+
+        }
+        .btm_group{
+          .member_group{
+            .member{
+              .name{
+                p{
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+          .exp_group{
+            .exp{
+              .hlight{
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //Footer Styling//
+  footer{
+    .footer_cont{
+      .footer_dtls{
+        .top_ftr{
+          flex-direction: column;
+          gap: 40px;
+          .cmpny_dtls{
+            flex-direction: row;
+            width: 100%;
+            gap: 120px;
+            .top_content{
+            }
+            .btm_content{
+              p{
+                width: max-content;
+              }
+            }
+          }
+          .links_group{
+            justify-content: space-between;
+            .links{
+              .lnk_cnt{
+
+              }
+            }
           }
         }
       }

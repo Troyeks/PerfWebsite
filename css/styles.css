@@ -24,6 +24,16 @@
   border-right: 1px solid #412815;
 }
 
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    max-width: 1080px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 824px;
+  }
+}
 button:hover {
   transition: all 400ms cubic-bezier(0.765, 0.005, 0.435, 1);
   transition-timing-function: cubic-bezier(0.765, 0.005, 0.435, 1);
@@ -110,15 +120,15 @@ input, select, textarea, button {
   font-weight: bold;
   font-style: bold;
 }
-header .hdr_con {
+nav .hdr_con {
   padding: 80px 0 135px 0;
 }
-header .hdr_con .hdr_dtls {
+nav .hdr_con .hdr_dtls {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header .hdr_con .hdr_dtls .btn_left .hamburger {
+nav .hdr_con .hdr_dtls .btn_left .hamburger {
   display: none;
 }
 
@@ -223,6 +233,9 @@ header .hdr_con .hdr_dtls .btn_left .hamburger {
   justify-content: space-between;
   gap: 120px;
 }
+.perf_qual .qual_con .qual_dtls img:nth-child(2) {
+  display: none;
+}
 .perf_qual .qual_con .qual_dtls .right_content {
   display: flex;
   flex-direction: column;
@@ -290,13 +303,13 @@ header .hdr_con .hdr_dtls .btn_left .hamburger {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 100%;
 }
 .perf_projects .projects_con .project_dtls .left_content h2 {
   font-family: "Alverata-Bold";
   font-size: 40px;
   line-height: 46px;
   color: #ffffff;
+  width: 40%;
 }
 .perf_projects .projects_con .project_dtls .left_content p {
   color: #ffffff;
@@ -319,7 +332,7 @@ header .hdr_con .hdr_dtls .btn_left .hamburger {
 }
 
 .perf_team {
-  background: linear-gradient(to bottom, transparent 50%, #ffffff 50% 80%, transparent 80%);
+  background: linear-gradient(to bottom, transparent 50%, #ffffff 50% 83%, transparent 83%);
 }
 .perf_team .team_con {
   padding: 140px 0 70px 0;
@@ -347,6 +360,7 @@ header .hdr_con .hdr_dtls .btn_left .hamburger {
 .perf_team .team_con .team_dtls .title p {
   color: #ffffff;
   line-height: 32px;
+  text-align: center;
 }
 .perf_team .team_con .team_dtls .btm_group {
   display: flex;
@@ -374,15 +388,17 @@ header .hdr_con .hdr_dtls .btn_left .hamburger {
 }
 .perf_team .team_con .team_dtls .btm_group .member_group .member .name h3 {
   color: #000000;
+  text-align: center;
 }
 .perf_team .team_con .team_dtls .btm_group .member_group .member .name p {
   color: #000000;
+  text-align: center;
 }
 .perf_team .team_con .team_dtls .btm_group .exp_group {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 64px;
+  padding: 64px;
   position: relative;
   background-image: url(/images//concrete-color.png);
   background-repeat: no-repeat;
@@ -401,12 +417,11 @@ header .hdr_con .hdr_dtls .btn_left .hamburger {
 .perf_team .team_con .team_dtls .btm_group .exp_group .exp h4 {
   font-size: 32px;
   line-height: 48px;
-  font-weight: 700;
+  font-weight: 600;
   color: #ffffff;
 }
 .perf_team .team_con .team_dtls .btm_group .exp_group .exp p {
   color: #ffffff;
-  font-weight: 500;
 }
 
 footer .footer_cont {
@@ -493,16 +508,39 @@ footer .footer_cont .footer_dtls .btm_footer p {
   display: none;
 }
 
-.ilis_na {
-  position: absolute;
-  padding: 10px 20px;
-  background-color: white;
-  display: none;
-}
-
 @media screen and (max-width: 1280px) {
-  .menu_mobile {
+  .perf_atf .wrapper {
+    max-width: 1200px;
+  }
+  .perf_atf .atf_con .dtls_container .atf_dtls .right_content {
+    width: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  .perf_projects {
+    background: url(/images//concrete-color.png) left center/57% no-repeat, linear-gradient(to right, transparent 50%, #ffffff 50%);
+  }
+  .perf_projects .projects_con .project_dtls .right_content {
+    right: -250px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  nav .hdr_con .hdr_dtls .btn_center {
+    display: none;
+  }
+  nav .hdr_con .hdr_dtls .btn_left {
     display: flex;
+    gap: 16px;
+  }
+  nav .hdr_con .hdr_dtls .btn_left .hamburger {
+    display: flex;
+    padding: 0px 12px;
+    border: 1px solid #FFCA95;
+    background-color: rgba(205, 127, 50, 0.4);
+    align-items: center;
+  }
+  .menu_mobile {
+    display: none;
     justify-content: flex-end;
     background-color: rgba(39, 39, 37, 0.24);
     -webkit-backdrop-filter: blur(10px);
@@ -552,20 +590,58 @@ footer .footer_cont .footer_dtls .btm_footer p {
     font-weight: 500;
     padding: 0;
   }
-  .wrapper {
-    max-width: 824px;
+  .perf_atf .wrapper {
+    max-width: 946px;
   }
-  header .hdr_con .hdr_dtls .btn_center {
+  .perf_atf .atf_con .dtls_container {
+    padding: 60px;
+  }
+  .perf_atf .atf_con .dtls_container .atf_dtls img {
+    bottom: -60px;
+    right: -62px;
+  }
+  .perf_atf .atf_con .dtls_container .atf_dtls .right_content {
+    width: 60%;
+  }
+  .perf_partners .partners_con .partners_dtls .btm_content img:first-child {
+    height: 49px;
+  }
+  .perf_partners .partners_con .partners_dtls .btm_content img:last-child {
+    height: 80px;
+  }
+  .perf_qual .qual_con .qual_dtls {
+    flex-direction: column;
+    gap: 80px;
+  }
+  .perf_qual .qual_con .qual_dtls img:first-child {
     display: none;
   }
-  header .hdr_con .hdr_dtls .btn_left {
+  .perf_qual .qual_con .qual_dtls img:nth-child(2) {
     display: flex;
-    gap: 16px;
   }
-  header .hdr_con .hdr_dtls .btn_left .hamburger {
-    display: flex;
-    padding: 0px 12px;
-    border: 1px solid #FFCA95;
-    background-color: rgba(205, 127, 50, 0.4);
+  .perf_projects {
+    background: url("/images//concrete-color.png") left center/68% no-repeat, linear-gradient(to right, transparent 50%, #ffffff 50%);
+  }
+  .perf_projects .projects_con .project_dtls .right_content {
+    right: -480px;
+  }
+  .perf_team .team_con .team_dtls .btm_group .member_group .member .name p {
+    font-size: 14px;
+  }
+  footer .footer_cont .footer_dtls .top_ftr {
+    flex-direction: column;
+    gap: 40px;
+  }
+  footer .footer_cont .footer_dtls .top_ftr .cmpny_dtls {
+    flex-direction: row;
+    width: 100%;
+    gap: 120px;
+  }
+  footer .footer_cont .footer_dtls .top_ftr .cmpny_dtls .btm_content p {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  footer .footer_cont .footer_dtls .top_ftr .links_group {
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=styles.css.map */
