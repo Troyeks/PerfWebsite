@@ -191,8 +191,6 @@ header{
 .perf_projects{
   overflow: hidden;
   position: relative;
-  //background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9c9e9f), color-stop(50%,#9c9e9f), color-stop(50%,#f6f6f6), color-stop(100%,#f6f6f6)); /* Chrome,Safari4+ */
-  //background: -webkit-linear-gradient(left,  #D77C2D 0%,#D77C2D 50%,#f6f6f6 50%,#f6f6f6 100%); /* Chrome10+,Safari5.1+ */
   background: 
     url('/images//concrete-color.png') left center / 50% no-repeat, /* Image on the left half */
     linear-gradient(to right, transparent 50%, #ffffff 50%); /* Gradient color on the right half */
@@ -429,7 +427,7 @@ footer{
 //Laptop Styling//
 @media screen and (max-width: 1280px) {
   .menu_mobile{
-    //display: flex;
+    display: flex;
     justify-content: flex-end;
     background-color: rgba(39, 39, 37, 24%);
     backdrop-filter: blur(10px);
@@ -445,7 +443,12 @@ footer{
       .wrapper{
         width: 100%;
         padding: 0 56px;
+        height: 100%;
         .menu_dtls{
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          gap: 40px;
           .top_content{
             display: flex;
             gap: 48px;
@@ -454,6 +457,19 @@ footer{
               border: 1px solid #272725;
               background-color: transparent;
               height: 32px;
+            }
+          }
+          .btm_content{
+            display: flex;
+            flex-direction: column;
+            gap: 56px;
+            justify-content: center;
+            height: 100%;
+            button{
+              font-size: 20px;
+              line-height: 36px;
+              font-weight: 500;
+              padding: 0;
             }
           }
         }

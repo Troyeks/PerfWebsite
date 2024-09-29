@@ -502,6 +502,7 @@ footer .footer_cont .footer_dtls .btm_footer p {
 
 @media screen and (max-width: 1280px) {
   .menu_mobile {
+    display: flex;
     justify-content: flex-end;
     background-color: rgba(39, 39, 37, 0.24);
     -webkit-backdrop-filter: blur(10px);
@@ -520,6 +521,13 @@ footer .footer_cont .footer_dtls .btm_footer p {
   .menu_mobile .menu_con .wrapper {
     width: 100%;
     padding: 0 56px;
+    height: 100%;
+  }
+  .menu_mobile .menu_con .wrapper .menu_dtls {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 40px;
   }
   .menu_mobile .menu_con .wrapper .menu_dtls .top_content {
     display: flex;
@@ -530,6 +538,19 @@ footer .footer_cont .footer_dtls .btm_footer p {
     border: 1px solid #272725;
     background-color: transparent;
     height: 32px;
+  }
+  .menu_mobile .menu_con .wrapper .menu_dtls .btm_content {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    justify-content: center;
+    height: 100%;
+  }
+  .menu_mobile .menu_con .wrapper .menu_dtls .btm_content button {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 500;
+    padding: 0;
   }
   .wrapper {
     max-width: 824px;
