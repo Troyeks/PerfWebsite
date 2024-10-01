@@ -678,4 +678,50 @@ footer{
     }
   }
 }
+@media screen and (max-width: 768px) {
+  //Above the Fold Styling//
+  .perf_atf{
+    .wrapper{
+      max-width: 768px;
+    }
+    .atf_con{
+      .dtls_container{
+        .atf_dtls{
+          img{
+            right: -250px;
+          }
+          .right_content{
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+
+  //Partners Styling//
+  .perf_partners{
+    .wrapper{
+    }
+    .partners_con{
+      .partners_dtls{
+        .top_content{
+          h2{
+            text-align: center;
+          }
+        }
+        .btm_content{
+          flex-wrap: wrap;
+          width: 80%;
+          row-gap: 32px;
+          img:first-child{
+            order: 4;
+          }
+          img:last-child{
+            order: 5;
+          }
+        }
+      }
+    }
+  }
+}
 
