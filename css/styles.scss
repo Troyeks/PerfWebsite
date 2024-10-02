@@ -723,5 +723,92 @@ footer{
       }
     }
   }
+
+  //Projects Styling//{
+    .perf_projects{
+      background: url("/images//concrete-color.png") top/68% no-repeat,
+      linear-gradient(to bottom, transparent 50%, #ffffff 50%);
+      background-size: 100%;
+      .projects_con{
+        .project_dtls{
+          flex-direction: column;
+          gap: 72px;
+          align-items: flex-start;
+          .left_content{
+          }
+          .right_content{
+             right: auto;
+            position: relative;
+          }
+        }
+      }
+    }
+
+    //Team Styling//
+  .perf_team{
+    .team_con{
+      .team_dtls{
+        .title{
+
+        }
+        .btm_group{
+          .member_group{
+            :nth-child(3){
+              display: none;
+            }
+            .member{
+              .name{
+                p{
+                }
+              }
+            }
+          }
+          .exp_group{
+            flex-wrap: wrap;
+            gap: 40px;
+            width: 100%;
+            .exp{
+              align-items: flex-start;
+              .hlight{
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+    //Footer Styling//
+  footer{
+    .footer_cont{
+      .footer_dtls{
+        .top_ftr{
+          .cmpny_dtls{
+            flex-direction: column;
+            gap: 40px;
+            .top_content{
+            }
+            .btm_content{
+              p{
+
+              }
+            }
+          }
+          .links_group{
+            .links{
+              .lnk_cnt{
+
+              }
+            }
+          }
+        }
+        .btm_footer{
+          flex-direction: column;
+          gap: 32px;
+        }
+      }
+    }
+  }
 }
 

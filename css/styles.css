@@ -674,4 +674,36 @@ footer .footer_cont .footer_dtls .btm_footer p {
   .perf_partners .partners_con .partners_dtls .btm_content img:last-child {
     order: 5;
   }
+  .perf_projects {
+    background: url("/images//concrete-color.png") top/68% no-repeat, linear-gradient(to bottom, transparent 50%, #ffffff 50%);
+    background-size: 100%;
+  }
+  .perf_projects .projects_con .project_dtls {
+    flex-direction: column;
+    gap: 72px;
+    align-items: flex-start;
+  }
+  .perf_projects .projects_con .project_dtls .right_content {
+    right: auto;
+    position: relative;
+  }
+  .perf_team .team_con .team_dtls .btm_group .member_group :nth-child(3) {
+    display: none;
+  }
+  .perf_team .team_con .team_dtls .btm_group .exp_group {
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+  }
+  .perf_team .team_con .team_dtls .btm_group .exp_group .exp {
+    align-items: flex-start;
+  }
+  footer .footer_cont .footer_dtls .top_ftr .cmpny_dtls {
+    flex-direction: column;
+    gap: 40px;
+  }
+  footer .footer_cont .footer_dtls .btm_footer {
+    flex-direction: column;
+    gap: 32px;
+  }
 }/*# sourceMappingURL=styles.css.map */
