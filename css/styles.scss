@@ -529,6 +529,9 @@ footer{
               font-weight: 500;
               padding: 0;
             }
+            #quote{
+              display: none;
+            }
           }
         }
       }
@@ -812,3 +815,80 @@ footer{
   }
 }
 
+//Mobile Screen//
+@media screen and (max-width: 360px) {
+  // Navigation Styling //
+  nav{
+    .hdr_con{
+      .hdr_dtls{
+        .btn_center{
+        }
+        .btn_left{
+          #quote{
+            display: none;
+          }
+          .hamburger{
+          }
+        }
+      }
+    }
+  }
+
+  // Menu Mobile //
+  .menu_mobile{
+    justify-content: space-between;
+    .menu_con{
+      width: 100%;
+      padding: 82px 0;
+      .wrapper{
+        max-width: 100%;
+        padding: 0 20px;
+        .menu_dtls{
+          .top_content{
+            justify-content: space-between;
+            button{
+            }
+          }
+          .btm_content{
+            button{
+            }
+            #quote{
+              display: flex;
+              font-size: 16px;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //Above the Fold Styling//
+  .perf_atf{
+    .wrapper{
+      max-width: 100%
+    }
+    .atf_con{
+      .dtls_container{
+        padding: 56px 20px 240px 20px;
+        .atf_dtls{
+          img{
+            bottom: -240px;
+          }
+          .right_content{
+            width: 100%;
+            h1{
+              font-size: 28px;
+              line-height: 40px;
+            }
+            button{
+              width: max-content;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}
