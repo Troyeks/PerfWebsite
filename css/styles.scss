@@ -10,7 +10,7 @@
   font-style: bold;
 }
 
-//* {outline: 1px solid cyan}; //for checking
+// * {outline: 1px solid cyan}; //for checking
 
 //Navigation Styling//
 nav{
@@ -47,7 +47,7 @@ nav{
         img{
           position: absolute;
           bottom: -60px;
-          right: -93px;
+          right: -90px;
         }
         .right_content{
           display: flex;
@@ -747,7 +747,7 @@ footer{
       }
     }
 
-    //Team Styling//
+  //Team Styling//
   .perf_team{
     .team_con{
       .team_dtls{
@@ -816,7 +816,10 @@ footer{
 }
 
 //Mobile Screen//
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 568px) {
+  
+}
+@media screen and (max-width: 375px) {
   p, button{
     font-size: 14px;
   }
@@ -879,7 +882,7 @@ footer{
           img{
             bottom: -240px;
             right: -24px;
-            width: 360px;
+            width: 375px;
           }
           .right_content{
             width: 100%;
@@ -897,36 +900,36 @@ footer{
     }
   }
 
-    //Partners Styling//
-    .perf_partners{
-      .wrapper{
-      }
-      .partners_con{
-        padding: 400px 0 64px 0;
-        .partners_dtls{
-          .top_content{
-            h2{
-              font-size: 24px;
-              line-height: 32px;
-            }
-            p{
-              text-align: center;
-            }
+  //Partners Styling//
+  .perf_partners{
+    .wrapper{
+    }
+    .partners_con{
+      padding: 400px 0 64px 0;
+      .partners_dtls{
+        .top_content{
+          h2{
+            font-size: 24px;
+            line-height: 32px;
           }
-          .btm_content{
-            img{
-              width: 28%;
-            }
-            img:first-child, img:last-child{
-              width: 46%;
-              height: 100%;
-            }
+          p{
+            text-align: center;
+          }
+        }
+        .btm_content{
+          img{
+            width: 28%;
+          }
+          img:first-child, img:last-child{
+            width: 46%;
+            height: 100%;
           }
         }
       }
     }
+  }
 
-    //Qualities Styling//
+  //Qualities Styling//
   .perf_qual{
     .qual_con{
       padding: 56px 0;
@@ -956,6 +959,66 @@ footer{
                 h3{
                   font-size: 16px;
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //Projects Styling//{
+  .perf_projects{
+    background: url("/images//concrete-color.png") top/100% no-repeat,
+    linear-gradient(to bottom, transparent 75%, #ffffff 35%);
+    background-size: 200%;
+    .projects_con{
+      padding: 56px 0;
+      .project_dtls{
+        .left_content{
+          h2{
+            font-size: 24px;
+            line-height: 32px;
+          }
+          button{
+            width: auto;
+            justify-content: center;
+          }
+        }
+        .right_content{
+          gap: 16px;
+        }
+      }
+    }
+  }
+
+  //Team Styling//
+  .perf_team{
+    background: linear-gradient(to bottom, transparent 38%, #ffffff 38% 83%, transparent 83%);
+    .team_con{
+      padding: 56px 0;
+      .team_dtls{
+        .title{
+          h2{
+            font-size: 24px;
+            line-height: 32px;
+          }
+        }
+        .btm_group{
+          .member_group{
+            :nth-child(2){
+              display: none;
+            }
+            .member{
+              .name{
+                p{
+                }
+              }
+            }
+          }
+          .exp_group{
+            .exp{
+              .hlight{
               }
             }
           }

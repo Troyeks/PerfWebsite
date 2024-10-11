@@ -39,7 +39,7 @@
     max-width: 568px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
   .wrapper {
     max-width: 320px;
   }
@@ -96,6 +96,8 @@ html, body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   background-color: #272725;
+  position: relative;
+  overflow-x: hidden;
 }
 
 ul, ol {
@@ -161,7 +163,7 @@ nav .hdr_con .hdr_dtls .btn_left .hamburger {
 .perf_atf .atf_con .dtls_container .atf_dtls img {
   position: absolute;
   bottom: -60px;
-  right: -93px;
+  right: -90px;
 }
 .perf_atf .atf_con .dtls_container .atf_dtls .right_content {
   display: flex;
@@ -715,7 +717,7 @@ footer .footer_cont .footer_dtls .btm_footer p {
     gap: 32px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
   p, button {
     font-size: 14px;
   }
@@ -753,7 +755,7 @@ footer .footer_cont .footer_dtls .btm_footer p {
   .perf_atf .atf_con .dtls_container .atf_dtls img {
     bottom: -240px;
     right: -24px;
-    width: 360px;
+    width: 375px;
   }
   .perf_atf .atf_con .dtls_container .atf_dtls .right_content {
     width: 100%;
@@ -808,5 +810,36 @@ footer .footer_cont .footer_dtls .btm_footer p {
   }
   .perf_qual .qual_con .qual_dtls .right_content .qual_group .qual .details h3 {
     font-size: 16px;
+  }
+  .perf_projects {
+    background: url("/images//concrete-color.png") top/100% no-repeat, linear-gradient(to bottom, transparent 75%, #ffffff 35%);
+    background-size: 200%;
+  }
+  .perf_projects .projects_con {
+    padding: 56px 0;
+  }
+  .perf_projects .projects_con .project_dtls .left_content h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .perf_projects .projects_con .project_dtls .left_content button {
+    width: auto;
+    justify-content: center;
+  }
+  .perf_projects .projects_con .project_dtls .right_content {
+    gap: 16px;
+  }
+  .perf_team {
+    background: linear-gradient(to bottom, transparent 38%, #ffffff 38% 83%, transparent 83%);
+  }
+  .perf_team .team_con {
+    padding: 56px 0;
+  }
+  .perf_team .team_con .team_dtls .title h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .perf_team .team_con .team_dtls .btm_group .member_group :nth-child(2) {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
