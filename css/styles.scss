@@ -133,7 +133,7 @@ nav{
       display: flex;
       justify-content: space-between;
       gap: 120px;
-      img:nth-child(2){
+      img:nth-child(2), img:nth-child(3){
         display: none;
       }
       .right_content{
@@ -817,9 +817,13 @@ footer{
 
 //Mobile Screen//
 @media screen and (max-width: 360px) {
+  p, button{
+    font-size: 14px;
+  }
   // Navigation Styling //
   nav{
     .hdr_con{
+      padding: 32px 0;
       .hdr_dtls{
         .btn_center{
         }
@@ -874,6 +878,8 @@ footer{
         .atf_dtls{
           img{
             bottom: -240px;
+            right: -24px;
+            width: 360px;
           }
           .right_content{
             width: 100%;
@@ -882,7 +888,8 @@ footer{
               line-height: 40px;
             }
             button{
-              width: max-content;
+              width: auto;
+              justify-content: center;
             }
           }
         }
@@ -890,5 +897,70 @@ footer{
     }
   }
 
+    //Partners Styling//
+    .perf_partners{
+      .wrapper{
+      }
+      .partners_con{
+        padding: 400px 0 64px 0;
+        .partners_dtls{
+          .top_content{
+            h2{
+              font-size: 24px;
+              line-height: 32px;
+            }
+            p{
+              text-align: center;
+            }
+          }
+          .btm_content{
+            img{
+              width: 28%;
+            }
+            img:first-child, img:last-child{
+              width: 46%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
 
+    //Qualities Styling//
+  .perf_qual{
+    .qual_con{
+      padding: 56px 0;
+      .qual_dtls{
+        gap: 40px;
+        img:nth-child(2){
+          display: none;
+        }
+        img:nth-child(3){
+          display: flex;
+        }
+        .right_content{
+          .title{
+            h2{
+              font-size: 24px;
+              line-height: 32px;
+            }
+          }
+          button{
+            width: auto;
+            justify-content: center;
+          }
+          .qual_group{
+            flex-direction: column;
+            .qual{
+              .details{
+                h3{
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

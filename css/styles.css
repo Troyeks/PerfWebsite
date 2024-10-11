@@ -243,7 +243,7 @@ nav .hdr_con .hdr_dtls .btn_left .hamburger {
   justify-content: space-between;
   gap: 120px;
 }
-.perf_qual .qual_con .qual_dtls img:nth-child(2) {
+.perf_qual .qual_con .qual_dtls img:nth-child(2), .perf_qual .qual_con .qual_dtls img:nth-child(3) {
   display: none;
 }
 .perf_qual .qual_con .qual_dtls .right_content {
@@ -716,6 +716,12 @@ footer .footer_cont .footer_dtls .btm_footer p {
   }
 }
 @media screen and (max-width: 360px) {
+  p, button {
+    font-size: 14px;
+  }
+  nav .hdr_con {
+    padding: 32px 0;
+  }
   nav .hdr_con .hdr_dtls .btn_left #quote {
     display: none;
   }
@@ -746,6 +752,8 @@ footer .footer_cont .footer_dtls .btm_footer p {
   }
   .perf_atf .atf_con .dtls_container .atf_dtls img {
     bottom: -240px;
+    right: -24px;
+    width: 360px;
   }
   .perf_atf .atf_con .dtls_container .atf_dtls .right_content {
     width: 100%;
@@ -755,7 +763,50 @@ footer .footer_cont .footer_dtls .btm_footer p {
     line-height: 40px;
   }
   .perf_atf .atf_con .dtls_container .atf_dtls .right_content button {
-    width: -moz-max-content;
-    width: max-content;
+    width: auto;
+    justify-content: center;
+  }
+  .perf_partners .partners_con {
+    padding: 400px 0 64px 0;
+  }
+  .perf_partners .partners_con .partners_dtls .top_content h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .perf_partners .partners_con .partners_dtls .top_content p {
+    text-align: center;
+  }
+  .perf_partners .partners_con .partners_dtls .btm_content img {
+    width: 28%;
+  }
+  .perf_partners .partners_con .partners_dtls .btm_content img:first-child, .perf_partners .partners_con .partners_dtls .btm_content img:last-child {
+    width: 46%;
+    height: 100%;
+  }
+  .perf_qual .qual_con {
+    padding: 56px 0;
+  }
+  .perf_qual .qual_con .qual_dtls {
+    gap: 40px;
+  }
+  .perf_qual .qual_con .qual_dtls img:nth-child(2) {
+    display: none;
+  }
+  .perf_qual .qual_con .qual_dtls img:nth-child(3) {
+    display: flex;
+  }
+  .perf_qual .qual_con .qual_dtls .right_content .title h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .perf_qual .qual_con .qual_dtls .right_content button {
+    width: auto;
+    justify-content: center;
+  }
+  .perf_qual .qual_con .qual_dtls .right_content .qual_group {
+    flex-direction: column;
+  }
+  .perf_qual .qual_con .qual_dtls .right_content .qual_group .qual .details h3 {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=styles.css.map */
